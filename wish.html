@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: black;
+        }
+        #cake
+        {
+            padding-top: 80px;
+            width: 100vw;
+            height:80vh;
+        }
+        #btn
+        {
+            margin:auto;
+        }
+        #container
+        {
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <title>Wishing Happy Birthday</title>
+</head>
+<body>
+    <center>
+    <div id="container">
+    <img id="cake" src="img/off.gif">
+    <br><br>
+    <button class="btn btn-success" id="btn" onclick="beep.play()">Click me!</button>
+    <br><br>
+    <button class="btn btn-light" id="btn"><a href="https://mainakrepositor.github.io/Ritz/">Open your surprise packet</a></button>
+</div></center>
+</body>
+<script>
+    var beep = new Audio();
+    beep.src = "beep.mp3";
+
+</script>
+</html>
